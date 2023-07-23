@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>ToDo List</title>
+  <script src="https://kit.fontawesome.com/1c548c6eb2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="box">
+    <div class="nav">
+      <i class="fa-regular fa-note-sticky" style="color: #080808;"></i>
+      <input id="myText" type="text" placeholder="Type ToDo List">
+      <button class="search" id="msearch" onclick="myfunc()">
+        <i class="fa-solid fa-circle-plus" style="color: #121212;"></i>
+      </button>
+    </div>
+
+    <div class="status1">
+      <i class="fa-solid fa-check-double" style="color: #0c0d0d;"></i>
+      <button onclick="completeAll()">Complete All Task</button>
+      <button onclick="clearCompleted()">Clear Completed</button>
+    </div>
+
+    <div class="list">
+      <ul id="list1">
+      </ul>
+    </div>
+
+    <div class="status2">
+      <div class="item1">
+        <p id="count1">0</p>
+        <p>task left</p>
+      </div>
+      <div class="item">
+        <button onclick="showAll()">All</button>
+        <button onclick="showIncomplete()">Incomplete</button>
+        <button onclick="showCompleted()">Completed</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
